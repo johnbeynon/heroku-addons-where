@@ -22,7 +22,7 @@ class Heroku::Command::Addons < Heroku::Command::Base
 
     apps.each do |app|
       addons = api.get_addons(app['name']).body
-      addons.select { |addon| addon['name'] =~ /^#{name}*/ }.each do |addon|
+      addons.select { |addon| addon['name'] =~ /#{name}*/ }.each do |addon|
         puts "#{app['name']} is using #{addon['name']}"
       end
     end
