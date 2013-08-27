@@ -16,10 +16,3 @@ Result:
     cheesy-feet-124 is using memcache:5mb
     salty-balls-432 is using memcachier:dev
 
-What it does
-
-Retrieves your application list and inspects each one for addons that match the
-passed attribute
-
-
-
